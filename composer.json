@@ -28,6 +28,28 @@
     "symfony/http-kernel": "~4.0",
     "symfony/process": "~4.0",
     "symfony/var-dumper": "~4.0",
+    "symfony/dotenv": "~4.0",
     "twig/twig": "^2.0"
+  },
+  "require-dev": {
+    "symfony/phpunit-bridge": "~4.0"
+  },
+  "autoload": {
+    "files": [
+      "src/DovePHP/Foundation/core.php"
+    ],
+    "psr-4": {
+      "DovePHP\\": "src/DovePHP/"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+    ],
+    "psr-4": {
+      "DovePHP\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
   }
 }
